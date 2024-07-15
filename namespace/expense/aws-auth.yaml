@@ -4,19 +4,21 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::381491976987:role/eksctl-expense-1-nodegroup-expense-NodeInstanceRole-iYVm1Uzkykj1
+      rolearn: arn:aws:iam::381491976987:role/eksctl-expense-1-nodegroup-expense-NodeInstanceRole-AdQlwhGw4z34
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     - groups:
       - expense-pod-reader
       userarn: arn:aws:iam::381491976987:user/venkat
-      username: venkat    
+      username: venkat        
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2024-07-12T14:47:35Z"
+  creationTimestamp: "2024-07-15T08:35:42Z"
   name: aws-auth
   namespace: kube-system
-  uid: e5af4de6-f8e9-4cf3-8ad0-2b3f8d236fe4  # dont delete this 
+  resourceVersion: "1230"
+  uid: c0fbd2a3-b513-4962-9de9-9293cb0a35d0
+
 
 
 # kubectl get configmap aws-auth -n kube-system -o yaml
