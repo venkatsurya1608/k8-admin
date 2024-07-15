@@ -16,7 +16,7 @@ metadata:
   creationTimestamp: "2024-07-12T14:47:35Z"
   name: aws-auth
   namespace: kube-system
-  uid: e5af4de6-f8e9-4cf3-8ad0-2b3f8d236fe4
+  uid: e5af4de6-f8e9-4cf3-8ad0-2b3f8d236fe4  # dont delete this 
 
 
 # kubectl get configmap aws-auth -n kube-system -o yaml
